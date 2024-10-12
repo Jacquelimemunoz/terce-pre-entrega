@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5e4b8c;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  color: black;
+}
+body h2 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+body p {
+  font-size: 30px;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.boton, .boton2 {
+  background-color: black;
+  padding: 10px 50px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f2bf7d;
+  color: white;
+  text-align: left;
+}
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.icons img {
+  width: 30px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c69fec;
+  padding: 10px 20px;
+  height: 170px;
+}
+.navbar .logo img {
+  height: 100%;
+  width: 100%;
+  margin-top: -10px;
+}
+.navbar .burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.navbar .burger .line {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+.navbar .nav-links li {
+  margin: 0 55px;
+  margin-bottom: 40px;
+}
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.tips-lista {
+  font-size: 30px;
+  margin: 20px;
+}
+.tips-lista li {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .boton, .boton2 {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-bottom: 50px;
+    padding: 20px 5px;
+  }
+  .navbar .burger {
+    display: flex;
+  }
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #c69fec;
+    top: 40px;
+    right: 0;
+    width: 100%;
+  }
+  .navbar .nav-links.active {
+    display: flex;
+  }
+  .navbar .logo img {
+    height: 10%;
+    width: 40%;
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

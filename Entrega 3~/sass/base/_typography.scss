@@ -1,0 +1,18 @@
+@import '../utilidades/variables';
+body {
+    background-color: $secondary-color;
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+    "Droid Sans Mono", monospace, monospace;
+    color: black;
+
+    h2 {
+        font-size: 20px;
+        margin-bottom:0px;
+    }
+
+    p {
+        font-size: 30px;
+        margin: 20px;
+        margin-bottom: 100px;
+    }
+}
